@@ -1,11 +1,18 @@
-/* Layout geral */
-body {
+/* Reset e tipografia */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Container principal */
 .site {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,24 +24,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .logo {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: bold;
-  color: #007bff;
+  color: #df5606;
 }
 
 nav a {
-  margin-left: 16px;
+  margin-left: 20px;
   text-decoration: none;
   color: #555;
   font-weight: 500;
 }
 
 nav a.secondary {
-  color: #007bff;
+  color: #df5606;
 }
 
 nav a:hover {
@@ -46,38 +53,37 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 400px;
   gap: 24px;
-  margin: 24px 0;
+  margin: 32px 0;
   align-items: center;
 }
 
 .hero-card h1 {
-  margin: 0 0 12px;
-  font-size: 2em;
-  line-height: 1.2;
+  font-size: 2.2em;
+  margin-bottom: 12px;
 }
 
 .hero-card p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   color: #555;
 }
 
 .cta-row a {
   display: inline-block;
-  margin-right: 12px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
+  margin-right: 12px;
   transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #df5606;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #df5606;
 }
 
 .btn-alt {
@@ -91,17 +97,17 @@ nav a:hover {
 
 .hero-illus img {
   width: 100%;
+  max-height: 280px;
   border-radius: 12px;
   object-fit: cover;
-  max-height: 300px;
 }
 
-/* Cards de vagas */
+/* Seção de vagas */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -112,20 +118,21 @@ nav a:hover {
 }
 
 .card h3 {
-  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .meta {
   font-size: 0.85em;
   color: #777;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-/* Companies */
+/* Seção de empresas */
 .company-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 60px;
 }
 
 .company-card img {
@@ -135,10 +142,12 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* Sobre */
-#sobre p {
-  color: #555;
-  line-height: 1.5;
+/* Seção Sobre */
+#sobre {
+  margin-top: 80px; /* maior espaçamento */
+  padding: 24px 16px;
+  background-color: #f0f2f5;
+  border-radius: 12px;
 }
 
 /* Footer */
@@ -147,7 +156,7 @@ footer {
   padding: 16px 0;
   color: #999;
   font-size: 0.9em;
-  margin-top: 24px;
+  margin-top: 40px;
 }
 
 /* Responsivo */
@@ -183,3 +192,4 @@ footer {
     margin-left: 0;
   }
 }
+
